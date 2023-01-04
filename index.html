@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <title>My Cal</title>
+</head>
+<body>
+     
+    <div class="container"> 
+
+     <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+
+        <div class="btns">
+            <div class="row">
+                <button class="btn-number" id="ce" onclick="backspc()">CE</button>
+                <button class="btn-number" onclick="fact()">x!</button>
+                <button class="btn btn-number">(</button>
+                <button class="btn btn-number">)</button>
+                <button class="btn btn-number">%</button>
+                <button class="btn-number" id="ac" onclick="screen.value=''">AC</button>
+            </div>
+
+
+            <div class="row">
+                <button class="btn-number" onclick="sin()">sin</button>
+                <button class="btn-number" onclick="pi()">π</button>
+                <button class="btn btn-number">7</button>
+                <button class="btn btn-number">8</button>
+                <button class="btn btn-number">9</button>
+                <button class="btn btn-number">÷</button>
+            </div>
+
+            <div class="row">
+                <button class="btn-number" onclick="cos()">cos</button>
+                <button class="btn-number" onclick="log()">log</button>
+                <button class="btn btn-number">4</button>
+                <button class="btn btn-number">5</button>
+                <button class="btn btn-number">6</button>
+                <button class="btn btn-number">*</button>
+            </div>
+
+            <div class="row">
+                <button class="btn-number" onclick="tan()">tan</button>
+                <button class="btn-number" onclick="sqrt()">√</button>
+                <button class="btn btn-number">1</button>
+                <button class="btn btn-number">2</button>
+                <button class="btn btn-number">3</button>
+                <button class="btn btn-number">-</button>
+            </div>
+
+            <div class="row">
+                <button class="btn-number" onclick="e()">e</button>
+                <button class="btn-number" onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span>
+                <button class="btn btn-number">0</button>
+                <button class="btn btn-number">.</button>
+                <button class="btn-number" onclick="screen.value=eval(screen.value)">=</button>
+                <button class="btn btn-number">+</button>
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
